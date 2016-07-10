@@ -102,6 +102,9 @@ func main() {
 	fmt.Scanln(&verificationCode)
 
 	accessToken, err := c.AuthorizeToken(requestToken, verificationCode)
+	fmt.Println("\n\n accessToken ",accessToken)
+	
+	
 	if err != nil {
 		log.Fatal(err)
 	}
