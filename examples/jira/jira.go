@@ -103,6 +103,7 @@ func main() {
 
 	accessToken, err := c.AuthorizeToken(requestToken, verificationCode)
 	fmt.Println("\n\n accessToken ",accessToken)
+	fmt.println("\n\n completed**********")
 	
 	
 	if err != nil {
